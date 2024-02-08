@@ -7,6 +7,9 @@ import vector2 from '../images/Vector 2.svg'
 import vector3 from '../images/Vector 3.svg'
 import vector4 from '../images/Vector 4.svg'
 import rectangel from '../images/Rectangle 4.svg'
+import { StaticImageData } from 'next/image'
+
+const image4: StaticImageData = burrontoSpecs
 
 export default function DiveIntoBody() {
   return (
@@ -42,9 +45,7 @@ export default function DiveIntoBody() {
         <Image src={rectangel} alt="img" className="h-80 md:h-[480px]" />
         <div className="absolute md:top-10 z-10 md:left-3 top-14 left-14  h-72 w-80 border md:h-[410px] md:w-[500px]  md:rounded-[100px] md:rounded-bl-[250px] overflow-hidden  rounded-[50px] rounded-bl-[150px]">
           <Image
-            src={burrontoSpecs}
-            // width={500}
-            // height={490}
+            src={image4}
             alt="img"
             className="  h-72  w-80  md:h-[410px] md:w-[500px]  object-fill "
           />
