@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import vector7 from '../images/Vector 7.svg'
 import vector8 from '../images/Vector 8.svg'
-import person from '../images/pexels-shvets-production-7562014 1.png'
+import person from '../images/person.png'
 import arrowLine from '../images/Component 1.svg'
 
 export default function AboutHydra() {
