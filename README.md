@@ -15,6 +15,7 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or the hydra app is deployed on netlify click here to view the website (https://hydraapp-reshmad-7e5b55.netlify.app/)
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
