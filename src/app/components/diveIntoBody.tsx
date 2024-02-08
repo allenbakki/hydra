@@ -43,7 +43,7 @@ export default function DiveIntoBody() {
       </div>
       <div className="relative md:pt-0 pt-10">
         <Image src={rectangel} alt="img" className="h-80 md:h-[480px]" />
-        <div className="absolute md:top-10 z-10 md:left-3 top-14 right-16   h-72 w-80 border md:h-[410px] md:w-[500px]  md:rounded-[100px] md:rounded-bl-[250px] overflow-hidden  rounded-[50px] rounded-bl-[150px]">
+        <div className="absolute md:top-10 z-10 md:left-3 top-14 right-16 h-72 w-80 border md:h-[410px] md:w-[500px]  md:rounded-[100px] md:rounded-bl-[250px] overflow-hidden  rounded-[50px] rounded-bl-[150px]">
           <Image
             src={image4}
             alt="img"
