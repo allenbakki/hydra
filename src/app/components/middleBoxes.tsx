@@ -1,22 +1,36 @@
 'use client'
 
 import React, { useState } from 'react'
-
-import Image, { StaticImageProps } from 'next/image'
-import education from '../images/education.png'
+import { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import outdoor from '../images/outdoor.png'
 import simulation from '../images/simulation.png'
 import selfCare from '../images/selfCare.png'
 import arrowLeft from '../images/arrow-left.svg'
 import arrowRight from '../images/chevron-small-down.svg'
 
-interface BoxData {
-  id: number
+import education from '../images/education.png'
+
+const image: StaticImageData = education
+const image1: StaticImageData = simulation
+const image2: StaticImageData = outdoor
+const image3: StaticImageData = selfCare
+
+interface MiddleBoxesProps {
   name: string
   img: StaticImageData
+  length: number
+  setStates: React.Dispatch<React.SetStateAction<number>>
+  states: number
 }
 
-function MiddleBoxes({ name, img, length, setStates, states }) {
+function MiddleBoxes({
+  name,
+  img,
+  length,
+  setStates,
+  states,
+}: MiddleBoxesProps) {
   const increment = () => {
     setStates((states) => (states >= length ? 1 : states + 1))
   }
@@ -63,26 +77,26 @@ function MiddleBoxes({ name, img, length, setStates, states }) {
 export default function BoxesData() {
   const [states, setStates] = useState(1)
 
-  const Data: BoxData[] = [
+  const Data = [
     {
       id: 1,
       name: 'SIMULATION',
-      img: simulation,
+      img: image1,
     },
     {
       id: 2,
       name: 'EDUCATION',
-      img: education,
+      img: image,
     },
     {
       id: 3,
       name: 'OUTDOOR',
-      img: outdoor,
+      img: image2,
     },
     {
       id: 4,
       name: 'SELF-CARE',
-      img: selfCare,
+      img: image3,
     },
   ]
   const dataBox = Data.find((item) => item.id === states)
