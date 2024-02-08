@@ -13,7 +13,7 @@ const image4: StaticImageData = burrontoSpecs
 
 export default function DiveIntoBody() {
   return (
-    <div className=" flex md:flex md:justify-around md:flex-row  md:pt-1 items-center flex-col-reverse gap-5 ">
+    <div className=" flex md:flex md:justify-around md:flex-row  md:pt-1 items-center flex-col-reverse gap-5 mb-10 ">
       <div className="md:text-4xl text-3xl flex flex-col relative z-10 gap-3 md:gap-0">
         <div className="flex gap-2 items-center ">
           <div className=" text-[#C0B7E8] md:text-6xl text-5xl">Dive</div>

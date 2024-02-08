@@ -4,10 +4,10 @@ import React, { useRef, useContext, createContext, RefObject } from 'react'
 const GlobalContext = createContext({})
 
 export default function GlobalContextProvider({ children }: any) {
-  const about = useRef(null)
-  const services = useRef(null)
-  const technology = useRef(null)
-  const howto = useRef(null)
+  const about = useRef<HTMLDivElement | null>(null)
+  const services = useRef<HTMLDivElement | null>(null)
+  const technology = useRef<HTMLDivElement | null>(null)
+  const howto = useRef<HTMLDivElement | null>(null)
 
   const scrollsection = (eleRef: any) => {
     if (eleRef && eleRef.current) {

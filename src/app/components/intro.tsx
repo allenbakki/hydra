@@ -5,10 +5,10 @@ import arrowLine from '../images/Component 1.svg'
 import { useGlobalContext } from './globalContext'
 
 export default function Into() {
-  const { about }:any = useGlobalContext()
+  const { about }: any = useGlobalContext()
   return (
-    <div ref={about} className="flex justify-around items-center mt-10 ">
-      <div className="flex ">
+    <div ref={about} className="flex justify-around items-center  ">
+      <div className="flex mt-10 ">
         <div className=" flex flex-col gap-2 ">
           <div className="md:text-5xl sm:text-3xl text-3xl ">INTRODUCTION</div>
           <div className="text-3xl md:text-5xl sm:text-3xl font-thin flex items-center gap-2">

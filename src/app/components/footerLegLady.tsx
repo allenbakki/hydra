@@ -15,10 +15,10 @@ import arrowRight from '../images/chevron-small-down.svg'
 import { useGlobalContext } from './globalContext'
 
 export default function FooterLegLady() {
-  const { technology }:any = useGlobalContext()
+  const { technology }: any = useGlobalContext()
   return (
     <div ref={technology} className="relative md:mt-20 mt-10 p-3">
-      <div className="relative md:rounded-full rounded-[40px]   overflow-hidden z-1 flex justify-evenly w-full z-0">
+      <div className="relative md:rounded-full rounded-[40px]   overflow-hidden z-1 flex justify-evenly w-full z-0 mt-10">
         <Image
           src={legs}
           alt="img"

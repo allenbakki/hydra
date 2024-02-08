@@ -6,13 +6,13 @@ import arrowLine from '../images/Component 1.svg'
 import { useGlobalContext } from './globalContext'
 
 export default function WhyBuildHydra() {
-  const { howto }:any = useGlobalContext()
+  const { howto }: any = useGlobalContext()
   return (
     <div
       ref={howto}
       className="flex md:justify-around justify-center  items-center "
     >
-      <div className="flex ">
+      <div className="flex mt-10">
         <div className=" flex flex-col gap-2 items-center md:items-baseline ">
           <div className="md:text-5xl sm:text-3xl text-3xl ">HOW WE BUILD</div>
           <div className="text-3xl md:text-5xl sm:text-3xl font-thin flex items-center gap-2">
