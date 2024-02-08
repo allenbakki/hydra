@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import burrontoSpecs from '../images/pexels-michelangelo-buonarroti-8728382 1 (1).png'
+import burrontoSpecs from '../images/specs.png'
 import { FaArrowRight } from 'react-icons/fa6'
 import vector1 from '../images/Vector 1.svg'
 import vector2 from '../images/Vector 2.svg'
