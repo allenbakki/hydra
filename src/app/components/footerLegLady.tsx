@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import legs from '../images/legslady.svg'
@@ -11,10 +12,12 @@ import eclipse from '../images/Ellipse 5.png'
 import eclipse2 from '../images/Ellipse 7.svg'
 import arrowLeft from '../images/arrow-left.svg'
 import arrowRight from '../images/chevron-small-down.svg'
+import { useGlobalContext } from './globalContext'
 
 export default function FooterLegLady() {
+  const { technology }:any = useGlobalContext()
   return (
-    <div className="relative md:mt-20 mt-10 p-3">
+    <div ref={technology} className="relative md:mt-20 mt-10 p-3">
       <div className="relative md:rounded-full rounded-[40px]   overflow-hidden z-1 flex justify-evenly w-full z-0">
         <Image
           src={legs}

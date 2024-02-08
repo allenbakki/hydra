@@ -1,10 +1,13 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import arrowLine from '../images/Component 1.svg'
+import { useGlobalContext } from './globalContext'
 
 export default function Into() {
+  const { about }:any = useGlobalContext()
   return (
-    <div className="flex justify-around items-center mt-10">
+    <div ref={about} className="flex justify-around items-center mt-10 ">
       <div className="flex ">
         <div className=" flex flex-col gap-2 ">
           <div className="md:text-5xl sm:text-3xl text-3xl ">INTRODUCTION</div>

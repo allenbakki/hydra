@@ -10,6 +10,7 @@ import arrowLeft from '../images/arrow-left.svg'
 import arrowRight from '../images/chevron-small-down.svg'
 
 import education from '../images/education.png'
+import { useGlobalContext } from './globalContext'
 
 const image: StaticImageData = education
 const image1: StaticImageData = simulation
@@ -75,6 +76,8 @@ function MiddleBoxes({
 }
 
 export default function BoxesData() {
+  const { services }:any = useGlobalContext()
+
   const [states, setStates] = useState(1)
 
   const Data = [
@@ -103,7 +106,10 @@ export default function BoxesData() {
 
   return (
     <div>
-      <div className="hidden md:flex md:justify-evenly justify-evenly sm:block">
+      <div
+        ref={services}
+        className="hidden md:flex md:justify-evenly justify-evenly sm:block"
+      >
         <div className="flex gap-6 mt-20">
           {Data &&
             Data.map((item, index) => {

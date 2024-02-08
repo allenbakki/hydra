@@ -1,10 +1,17 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import arrowLine from '../images/Component 1.svg'
+import { useGlobalContext } from './globalContext'
 
 export default function WhyBuildHydra() {
+  const { howto }:any = useGlobalContext()
   return (
-    <div className="flex md:justify-around justify-center  items-center ">
+    <div
+      ref={howto}
+      className="flex md:justify-around justify-center  items-center "
+    >
       <div className="flex ">
         <div className=" flex flex-col gap-2 items-center md:items-baseline ">
           <div className="md:text-5xl sm:text-3xl text-3xl ">HOW WE BUILD</div>

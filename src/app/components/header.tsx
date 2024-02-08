@@ -1,9 +1,20 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import hydra from '../images/Hydra.svg'
 import hamburgerButton from '../images/Hamburger-Button.svg'
+import { useGlobalContext } from './globalContext'
 
 export default function Header() {
+  const {
+    services,
+    about,
+    technology,
+    howto,
+    scrollsection,
+  }: any = useGlobalContext()
+
   return (
     <div className="flex items-center md:justify-around sm:justify-between pt-2 md:pt-0 justify-between">
       <div className="flex items-center gap-0  md:gap-2">
@@ -15,11 +26,11 @@ export default function Header() {
       <div className="sm:hidden pr-2">
         <Image src={hamburgerButton} alt="hamburger button" />
       </div>
-      <div className="hidden items-center gap-5 sm:flex ">
-        <div>ABOUT</div>
-        <div>SERVICES</div>
-        <div>TECHNOLOGIES</div>
-        <div>HOW TO</div>
+      <div className="hidden items-center gap-5 sm:flex cursor-pointer ">
+        <div onClick={() => scrollsection(about)}>ABOUT</div>
+        <div onClick={() => scrollsection(services)}>SERVICES</div>
+        <div onClick={() => scrollsection(technology)}>TECHNOLOGIES</div>
+        <div onClick={() => scrollsection(howto)}>HOW TO</div>
       </div>
       <div className="hidden items-center gap-5 sm:flex">
         <button className="border border-slate-200 p-2 px-6 rounded-full">
